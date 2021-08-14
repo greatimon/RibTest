@@ -20,6 +20,7 @@
 		D0B01A1926C804D90076B5DF /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1826C804D90076B5DF /* RootViewController.swift */; };
 		D0B01A1B26C804E40076B5DF /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1A26C804E40076B5DF /* RootBuilder.swift */; };
 		D0B01A1D26C804F30076B5DF /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1C26C804F30076B5DF /* RootInteractor.swift */; };
+		D0B01A2026C805260076B5DF /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1F26C805260076B5DF /* AppComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		D0B01A1826C804D90076B5DF /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		D0B01A1A26C804E40076B5DF /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
 		D0B01A1C26C804F30076B5DF /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		D0B01A1F26C805260076B5DF /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +133,8 @@
 		D0B019DA26C7FD380076B5DF /* RibTest */ = {
 			isa = PBXGroup;
 			children = (
+				D0B01A1E26C805140076B5DF /* AppStart */,
 				D0B01A1426C8049D0076B5DF /* RIBs */,
-				D0B019DB26C7FD380076B5DF /* AppDelegate.swift */,
 				D0B019E626C7FD3A0076B5DF /* LaunchScreen.storyboard */,
 				D0B019E926C7FD3A0076B5DF /* Info.plist */,
 				D0B01A0B26C802720076B5DF /* Resource */,
@@ -194,6 +196,15 @@
 				D0B01A1C26C804F30076B5DF /* RootInteractor.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		D0B01A1E26C805140076B5DF /* AppStart */ = {
+			isa = PBXGroup;
+			children = (
+				D0B01A1F26C805260076B5DF /* AppComponent.swift */,
+				D0B019DB26C7FD380076B5DF /* AppDelegate.swift */,
+			);
+			path = AppStart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B01A1926C804D90076B5DF /* RootViewController.swift in Sources */,
+				D0B01A2026C805260076B5DF /* AppComponent.swift in Sources */,
 				D0B01A1726C804CE0076B5DF /* RootRouter.swift in Sources */,
 				D0B01A1D26C804F30076B5DF /* RootInteractor.swift in Sources */,
 				D0B019DC26C7FD380076B5DF /* AppDelegate.swift in Sources */,
