@@ -16,10 +16,6 @@
 		D0B01A0E26C802B60076B5DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0B01A0D26C802B60076B5DF /* Localizable.strings */; };
 		D0B01A1126C8034C0076B5DF /* Strings_Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1026C8034C0076B5DF /* Strings_Generated.swift */; };
 		D0B01A1326C803960076B5DF /* Assets_Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1226C803960076B5DF /* Assets_Generated.swift */; };
-		D0B01A1726C804CE0076B5DF /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1626C804CE0076B5DF /* RootRouter.swift */; };
-		D0B01A1926C804D90076B5DF /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1826C804D90076B5DF /* RootViewController.swift */; };
-		D0B01A1B26C804E40076B5DF /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1A26C804E40076B5DF /* RootBuilder.swift */; };
-		D0B01A1D26C804F30076B5DF /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1C26C804F30076B5DF /* RootInteractor.swift */; };
 		D0B01A2026C805260076B5DF /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1F26C805260076B5DF /* AppComponent.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,10 +54,6 @@
 		D0B01A0D26C802B60076B5DF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D0B01A1026C8034C0076B5DF /* Strings_Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings_Generated.swift; sourceTree = "<group>"; };
 		D0B01A1226C803960076B5DF /* Assets_Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets_Generated.swift; sourceTree = "<group>"; };
-		D0B01A1626C804CE0076B5DF /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
-		D0B01A1826C804D90076B5DF /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		D0B01A1A26C804E40076B5DF /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
-		D0B01A1C26C804F30076B5DF /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		D0B01A1F26C805260076B5DF /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,10 +182,6 @@
 		D0B01A1526C804A40076B5DF /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				D0B01A1626C804CE0076B5DF /* RootRouter.swift */,
-				D0B01A1826C804D90076B5DF /* RootViewController.swift */,
-				D0B01A1A26C804E40076B5DF /* RootBuilder.swift */,
-				D0B01A1C26C804F30076B5DF /* RootInteractor.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -400,14 +388,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B01A1926C804D90076B5DF /* RootViewController.swift in Sources */,
 				D0B01A2026C805260076B5DF /* AppComponent.swift in Sources */,
-				D0B01A1726C804CE0076B5DF /* RootRouter.swift in Sources */,
-				D0B01A1D26C804F30076B5DF /* RootInteractor.swift in Sources */,
 				D0B019DC26C7FD380076B5DF /* AppDelegate.swift in Sources */,
 				D0B01A1326C803960076B5DF /* Assets_Generated.swift in Sources */,
 				D0B01A1126C8034C0076B5DF /* Strings_Generated.swift in Sources */,
-				D0B01A1B26C804E40076B5DF /* RootBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
