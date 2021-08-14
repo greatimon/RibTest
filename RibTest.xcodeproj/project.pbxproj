@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		D0B019E826C7FD3A0076B5DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B019E626C7FD3A0076B5DF /* LaunchScreen.storyboard */; };
 		D0B019F326C7FD3B0076B5DF /* RibTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B019F226C7FD3B0076B5DF /* RibTestTests.swift */; };
 		D0B019FE26C7FD3B0076B5DF /* RibTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B019FD26C7FD3B0076B5DF /* RibTestUITests.swift */; };
+		D0B01A0E26C802B60076B5DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0B01A0D26C802B60076B5DF /* Localizable.strings */; };
+		D0B01A1126C8034C0076B5DF /* Strings_Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1026C8034C0076B5DF /* Strings_Generated.swift */; };
+		D0B01A1326C803960076B5DF /* Assets_Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B01A1226C803960076B5DF /* Assets_Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		D0B019F926C7FD3B0076B5DF /* RibTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RibTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B019FD26C7FD3B0076B5DF /* RibTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibTestUITests.swift; sourceTree = "<group>"; };
 		D0B019FF26C7FD3B0076B5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B01A0D26C802B60076B5DF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D0B01A1026C8034C0076B5DF /* Strings_Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings_Generated.swift; sourceTree = "<group>"; };
+		D0B01A1226C803960076B5DF /* Assets_Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets_Generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,6 @@
 				6E64F1C472DDB8F8752F3DF7 /* Pods-RibTest.debug.xcconfig */,
 				977CFDBA2312856DC338247C /* Pods-RibTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -125,9 +130,9 @@
 				D0B019DB26C7FD380076B5DF /* AppDelegate.swift */,
 				D0B019DF26C7FD380076B5DF /* ViewController.swift */,
 				D0B019E126C7FD380076B5DF /* Main.storyboard */,
-				D0B019E426C7FD3A0076B5DF /* Assets.xcassets */,
 				D0B019E626C7FD3A0076B5DF /* LaunchScreen.storyboard */,
 				D0B019E926C7FD3A0076B5DF /* Info.plist */,
+				D0B01A0B26C802720076B5DF /* Resource */,
 			);
 			path = RibTest;
 			sourceTree = "<group>";
@@ -150,6 +155,25 @@
 			path = RibTestUITests;
 			sourceTree = "<group>";
 		};
+		D0B01A0B26C802720076B5DF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D0B01A0C26C8027C0076B5DF /* Generated */,
+				D0B01A0D26C802B60076B5DF /* Localizable.strings */,
+				D0B019E426C7FD3A0076B5DF /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D0B01A0C26C8027C0076B5DF /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				D0B01A1226C803960076B5DF /* Assets_Generated.swift */,
+				D0B01A1026C8034C0076B5DF /* Strings_Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +186,7 @@
 				D0B019D526C7FD380076B5DF /* Frameworks */,
 				D0B019D626C7FD380076B5DF /* Resources */,
 				615C4F351A7AFB9158C676EA /* [CP] Embed Pods Frameworks */,
+				D0B01A0F26C802F70076B5DF /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -256,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B019E826C7FD3A0076B5DF /* LaunchScreen.storyboard in Resources */,
+				D0B01A0E26C802B60076B5DF /* Localizable.strings in Resources */,
 				D0B019E526C7FD3A0076B5DF /* Assets.xcassets in Resources */,
 				D0B019E326C7FD380076B5DF /* Main.storyboard in Resources */,
 			);
@@ -317,6 +343,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RibTest/Pods-RibTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D0B01A0F26C802F70076B5DF /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Images, Colors xcassets\nPods/SwiftGen/bin/SwiftGen run xcassets \"${SRCROOT}/${TARGETNAME}/Resource/Assets.xcassets\" -t swift5 -o \"${SRCROOT}/${TARGETNAME}/Resource/Generated/Assets_Generated.swift\"\n\n# Strings\nPods/SwiftGen/bin/SwiftGen run strings \"${SRCROOT}/${TARGETNAME}/Resource/Localizable.strings\" --template structured-swift4 -o \"${SRCROOT}/${TARGETNAME}/Resource/Generated/Strings_Generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -326,6 +370,8 @@
 			files = (
 				D0B019E026C7FD380076B5DF /* ViewController.swift in Sources */,
 				D0B019DC26C7FD380076B5DF /* AppDelegate.swift in Sources */,
+				D0B01A1326C803960076B5DF /* Assets_Generated.swift in Sources */,
+				D0B01A1126C8034C0076B5DF /* Strings_Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
