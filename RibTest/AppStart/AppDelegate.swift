@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.launchRouter = launchRouter
         
         launchRouter.launch(from: window)
-        
         return true
     }
 
